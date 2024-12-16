@@ -1,10 +1,10 @@
 #import "../utils.typ": *
 
 #focus-slide[
-That's all, folks!
+= That's all, folks! <touying:hidden>
 ]
 
-== Stay in touch!
+== Stay in touch
 
 #grid(
   columns: (1fr, 1fr, 3fr, 1fr, 1fr),
