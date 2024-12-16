@@ -2,6 +2,12 @@
 
 == Intermezzo
 
+#align(center)[#image("../images/crane.svg", width: 15%)]
+
+Construction ahead! Flakes are still a work in progress, and small details of their design may change in the future.
+
+#pagebreak()
+
 *We'll return after these messages!*
 
 #parspace

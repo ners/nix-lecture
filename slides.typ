@@ -47,3 +47,7 @@
 #include "sections/install-nix.typ"
 
 = Nix projects
+
+== Stay in touch!
+
+#include "sections/and-goodbye.typ"

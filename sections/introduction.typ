@@ -16,21 +16,21 @@
 ]
 
 #focus-slide[
-#quote(attribution: <phd-thesis>)[
-  Nix is a solution for getting *computer programs from one machine to another*
-  #pause
-  and having them *still work* when they get there.
-]
-#speaker-note[
-  + Nix was created in 2006 by Eelco Dolstra who introduced it as such
-  + In principle, computer programs are a set of files, so transferring them between computers is a simple matter of copying those files
-  + As you might already suspect, copying is not the issue – but we thought it was a good idea that the files should also work the same way on both machines
-  + There are several reasons this is a hard problem worth solving:
-    + There are more and more computers in the world
-    + Despite standardisation, computers are more and more different
-    + The software we want to run is more and more complex
-  + We can't really change the first two things, but let's think about what makes a program complex
-]
+  #quote(attribution: <phd-thesis>)[
+    Nix is a solution for getting *computer programs from one machine to another*
+    #pause
+    and having them *still work* when they get there.
+  ]
+  #speaker-note[
+    + Nix was created in 2006 by Eelco Dolstra who introduced it as such
+    + In principle, computer programs are a set of files, so transferring them between computers is a simple matter of copying those files
+    + As you might already suspect, copying is not the issue – but we thought it was a good idea that the files should also work the same way on both machines
+    + There are several reasons this is a hard problem worth solving:
+      + There are more and more computers in the world
+      + Despite standardisation, computers are more and more different
+      + The software we want to run is more and more complex
+    + We can't really change the first two things, but let's think about what makes a program complex
+  ]
 ]
 
 #include "motivation.typ"

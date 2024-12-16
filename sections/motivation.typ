@@ -55,4 +55,4 @@
   - these are repeatable, but not reproducible
   #pause
   - outside of the scope of this lecture
-
+  #image("../images/whale.svg", width: 25%, height: 25%, fit: "contain")
