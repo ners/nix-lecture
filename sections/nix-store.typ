@@ -27,8 +27,62 @@
 
 #pagebreak()
 
+#let inputs = diagram(
+  spacing: 2em,
+  node-stroke: 1pt,
+  edge-stroke: 1pt,
+  node(
+    (0, 0),
+    [
+      build instructions
+    ],
+    height: 3em,
+    width: 6em,
+  ),
+  edge((0, 0), (2, 1), "-|>"),
+  node(
+    (0, 1),
+    [
+      build input
+    ],
+    height: 3em,
+    width: 6em,
+  ),
+  edge((0, 1), (2, 1), "-|>"),
+  node(
+    (0, 2),
+    [
+      build input
+    ],
+    height: 3em,
+    width: 6em,
+  ),
+  edge((0, 2), (2, 1), "-|>"),
+  node(
+    (2, 1),
+    [
+      build task
+    ],
+    height: 3em,
+    width: 6em,
+  ),
+  edge((2, 1), (3, 1), "-|>"),
+  node(
+    (3, 1),
+    [
+      build result
+    ],
+    height: 3em,
+    width: 6em,
+  ),
+)
+
+#align(center)[#inputs]
+
+#pagebreak()
+
 #align(center)[#diagram(
-    spacing: 2em,
+    spacing: 1.25em,
     node-stroke: 1pt,
     edge-stroke: 1pt,
     node(
@@ -36,115 +90,37 @@
       [
         build instructions
       ],
-      height: 3em,
-      width: 6em,
+      height: 6em,
+      width: 10em,
     ),
-    edge((0, 0), (2, 1), "-|>"),
+    edge((0, 0), (1, 1), "-|>"),
     node(
       (0, 1),
       [
-        build input
+        #text(
+          8pt,
+          [#inputs],
+        )
       ],
-      height: 3em,
-      width: 6em,
+      height: 6em,
+      width: 10em,
     ),
-    edge((0, 1), (2, 1), "-|>"),
+    edge((0, 1), (1, 1), "-|>"),
     node(
       (0, 2),
       [
-        build input
-      ],
-      height: 3em,
-      width: 6em,
-    ),
-    edge((0, 2), (2, 1), "-|>"),
-    node(
-      (2, 1),
-      [
-        build task
-      ],
-      height: 3em,
-      width: 6em,
-    ),
-    edge((2, 1), (3, 1), "-|>"),
-    node(
-      (3, 1),
-      [
-        build result
-      ],
-      height: 3em,
-      width: 6em,
-    ),
-  )]
-
-#pagebreak()
-
-#align(center)[#diagram(
-    spacing: 2em,
-    node-stroke: 1pt,
-    edge-stroke: 1pt,
-    node(
-      (0, 0),
-      [
-
         #text(
-          10pt,
-          [#diagram(
-              spacing: 2em,
-              node-stroke: 1pt,
-              edge-stroke: 1pt,
-              node(
-                (0, 0),
-                [
-                  build instructions
-                ],
-                height: 3em,
-                width: 6em,
-              ),
-              edge((0, 0), (2, 1), "-|>"),
-              node(
-                (0, 1),
-                [
-                  build input
-                ],
-                height: 3em,
-                width: 6em,
-              ),
-              edge((0, 1), (2, 1), "-|>"),
-              node(
-                (0, 2),
-                [
-                  build input
-                ],
-                height: 3em,
-                width: 6em,
-              ),
-              edge((0, 2), (2, 1), "-|>"),
-              node(
-                (2, 1),
-                [
-                  build task
-                ],
-                height: 3em,
-                width: 6em,
-              ),
-              edge((2, 1), (3, 1), "-|>"),
-              node(
-                (3, 1),
-                [
-                  build result
-                ],
-                height: 3em,
-                width: 6em,
-              ),
-            )],
+          8pt,
+          [#inputs],
         )
       ],
+      height: 6em,
+      width: 10em,
     ),
-    edge((0, 0), (1, 0), "-|>"),
-    node((1, 0), [build task], height: 3em, width: 6em),
-    edge((1, 0), (2, 0), "-|>"),
-    node((2, 0), [build result], height: 3em, width: 6em),
+    edge((0, 2), (1, 1), "-|>"),
+    node((1, 1), [build task], height: 3em, width: 6em),
+    edge((1, 1), (2, 1), "-|>"),
+    node((2, 1), [build result], height: 3em, width: 6em),
   )]
 
 #pagebreak()
