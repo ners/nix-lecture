@@ -24,7 +24,7 @@
 #outline(title: none, indent: 1em, depth: 1)
 
 == Bibliography <touying:hidden>
-#bibliography("bibliography.yml", style: "apa") 
+#bibliography("bibliography.yml", style: "apa")
 
 #include "sections/introduction.typ"
 

@@ -21,11 +21,14 @@ Why do we need a new language?
 
 #grid(
   columns: (1.5fr, 1fr),
-  text(size: 12pt, raw(read("../examples/hello/derivation.json"), lang: "JSON")),
+  text(
+    size: 12pt,
+    raw(read("../examples/hello/derivation.json"), lang: "JSON"),
+  ),
   [
     #pause
     #text(size: 14pt, raw(read("../examples/hello/default.nix"), lang: "Nix"))
-  ]
+  ],
 )
 
 #pagebreak()
@@ -159,57 +162,75 @@ The purpose of the Nix language is to easily *create* and *compose* derivations
 #grid(
   columns: (1fr, 1.5fr),
   text(size: 14pt, raw(read("../examples/hello/default.nix"), lang: "Nix")),
-  text(size: 11pt, raw(read("../examples/hello/derivation.json"), lang: "JSON")),
+  text(
+    size: 11pt,
+    raw(read("../examples/hello/derivation.json"), lang: "JSON"),
+  ),
 )
 
 #pagebreak()
 #speaker-note[
-  + 
+  +
 ]
 
 #grid(
   columns: (1fr, 1.5fr),
   text(size: 14pt, raw(read("../examples/hello-c/default.nix"), lang: "Nix")),
-  text(size: 11pt, raw(read("../examples/hello-c/derivation.json"), lang: "JSON")),
+  text(
+    size: 11pt,
+    raw(read("../examples/hello-c/derivation.json"), lang: "JSON"),
+  ),
 )
 
 #pagebreak()
 #speaker-note[
-  + 
+  +
 ]
 
 #grid(
   columns: (1fr, 1.5fr),
-  text(size: 14pt, raw(read("../examples/hello-c-multiple/default.nix"), lang: "Nix")),
-  text(size: 14pt, raw(read("../examples/hello-c-multiple/builder.sh"), lang: "Bash")),
+  text(
+    size: 14pt,
+    raw(read("../examples/hello-c-multiple/default.nix"), lang: "Nix"),
+  ),
+  text(
+    size: 14pt,
+    raw(read("../examples/hello-c-multiple/builder.sh"), lang: "Bash"),
+  ),
 )
 
 #pagebreak()
 
 - Many real-world C projects are built with some standard utilities
-    #pause
-    - Bash, GCC, Make, awk, sed, ...
-    #pause
-    - These projects are built by running these tools in a sequence
+  #pause
+  - Bash, GCC, Make, awk, sed, ...
+  #pause
+  - These projects are built by running these tools in a sequence
 
 #pause
 #parspace
 - We can write a Nix function that builds a derivation with many standard utilities provided
-    #pause
-    - This function is a template for how to build a platonic C project
-    #pause
-    - We fill in the template with function parameters
+  #pause
+  - This function is a template for how to build a platonic C project
+  #pause
+  - We fill in the template with function parameters
 
 #pagebreak()
 #speaker-note[
-  + 
+  +
 ]
 
-#text(size: 14pt, raw(read("../examples/hello-c-make/default.nix"), lang: "Nix"))
+#text(
+  size: 14pt,
+  raw(read("../examples/hello-c-make/default.nix"), lang: "Nix"),
+)
 
 #pagebreak()
 #speaker-note[
-  + 
+  +
 ]
 
-#text(size: 14pt, raw(read("../examples/hello-c-make-deps/default.nix"), lang: "Nix"))
+#text(
+  size: 14pt,
+  raw(read("../examples/hello-c-make-deps/default.nix"), lang: "Nix"),
+)

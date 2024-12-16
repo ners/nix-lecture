@@ -6,42 +6,85 @@ All software is built with The Pipeline™:
 
 #pause
 #parspace
-#text(14pt,diagram( 
-spacing: 2em,
-  node-stroke: 1pt,
-  edge-stroke: 1pt,
-  node((0,0), [
-    `fetch`
-  ], height: 3em, width:5em),
-  edge("-|>"),
-  node((1,0), [
-    `unpack`
-  ], height: 3em, width:5em),
-  edge("-|>"),
-  node((2,0), [
-    `patch`
-  ], height: 3em, width:5em),
-  edge("-|>"),
-  node((3,0), [
-    `configure`
-  ], height: 3em, width:5em),
-  edge("-|>"),
-  node((4,0), [
-    `build`
-  ], height: 3em, width:5em),
-  edge("-|>"),
-  node((5,0), [
-    `check`
-  ], height: 3em, width:5em),
-  edge("-|>"),
-  node((6,0), [
-    `install`
-  ], height: 3em, width:5em),
-  edge("-|>"),
-  node((7,0), [
-    `fixup`
-  ], height: 3em, width:5em),
-))
+#text(
+  14pt,
+  diagram(
+    spacing: 2em,
+    node-stroke: 1pt,
+    edge-stroke: 1pt,
+    node(
+      (0, 0),
+      [
+        `fetch`
+      ],
+      height: 3em,
+      width: 5em,
+    ),
+    edge("-|>"),
+    node(
+      (1, 0),
+      [
+        `unpack`
+      ],
+      height: 3em,
+      width: 5em,
+    ),
+    edge("-|>"),
+    node(
+      (2, 0),
+      [
+        `patch`
+      ],
+      height: 3em,
+      width: 5em,
+    ),
+    edge("-|>"),
+    node(
+      (3, 0),
+      [
+        `configure`
+      ],
+      height: 3em,
+      width: 5em,
+    ),
+    edge("-|>"),
+    node(
+      (4, 0),
+      [
+        `build`
+      ],
+      height: 3em,
+      width: 5em,
+    ),
+    edge("-|>"),
+    node(
+      (5, 0),
+      [
+        `check`
+      ],
+      height: 3em,
+      width: 5em,
+    ),
+    edge("-|>"),
+    node(
+      (6, 0),
+      [
+        `install`
+      ],
+      height: 3em,
+      width: 5em,
+    ),
+    edge("-|>"),
+    node(
+      (7, 0),
+      [
+        `fixup`
+      ],
+      height: 3em,
+      width: 5em,
+    ),
+  ),
+)
 
 
 //- We don't want to reinvent the wheel
