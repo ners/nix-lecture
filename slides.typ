@@ -18,7 +18,7 @@
 
 #set quote(block: true)
 
-#title-slide()
+#include "sections/title.typ"
 
 == Table of contents <touying:hidden>
 #outline(title: none, indent: 1em, depth: 1)
@@ -27,6 +27,8 @@
 #bibliography("bibliography.yml", style: "apa")
 
 #include "sections/introduction.typ"
+
+#include "sections/nix-store.typ"
 
 = Nix language
 
@@ -39,3 +41,9 @@
 = NixOS
 
 #include "sections/nixos.typ"
+
+= Intermezzo
+
+#include "sections/install-nix.typ"
+
+= Nix projects

@@ -1,5 +1,12 @@
 #import "../utils.typ": *
 
+= Nix store
+
+#speaker-note[
+  + To understand how Nix works, we must introduce a central concept called the Nix store
+  + To help illustrate the concept, I will draw a parallel with how programs interact with computer memory
+]
+
 == Nix store
 
 - The *Nix store* is a filesystem tree analogous to heap memory

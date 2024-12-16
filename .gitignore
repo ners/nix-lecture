@@ -1,4 +1,5 @@
 *.pdf
+*.pdfpc
 .direnv
 .envrc
 dist-newstyle
