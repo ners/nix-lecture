@@ -26,9 +26,10 @@
 
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = with pkgs; [
-          pdfpc
           tinymist
           typst
+        ] ++ lib.optionals pkgs.stdenv.isLinux [
+          pdfpc
         ];
       };
     });

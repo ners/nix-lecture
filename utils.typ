@@ -1,4 +1,5 @@
 #import "@preview/touying:0.5.3": *
+#import "@preview/fletcher:0.5.3" as fletcher: diagram, node, edge
 #import themes.metropolis: *
 
 // Pdfpc configuration
