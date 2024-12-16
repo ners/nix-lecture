@@ -10,7 +10,7 @@ taming-unix:
 
 memory-discipline:
   type: article
-  title: The Purely Functional Software Deployment Model
+  title: Imposing a Memory Management Discipline on Software Deployment
   author:
     - Eelco Dolstra
     - Eelco Visser

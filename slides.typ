@@ -1,8 +1,5 @@
 #import "utils.typ": *
 
-#set list(spacing: 0.7em)
-#set par(spacing: 0.7em, leading: 0.7em)
-
 #show: metropolis-theme.with(
   aspect-ratio: "16-9",
   config-info(
@@ -20,11 +17,12 @@
 
 #include "sections/title.typ"
 
-== Table of contents <touying:hidden>
-#outline(title: none, indent: 1em, depth: 1)
+#include "sections/table-of-contents.typ"
 
-== Bibliography <touying:hidden>
-#bibliography("bibliography.yml", style: "apa")
+#include "sections/bibliography.typ"
+
+#set list(spacing: 0.7em)
+#set par(spacing: 0.7em, leading: 0.7em)
 
 #include "sections/introduction.typ"
 
