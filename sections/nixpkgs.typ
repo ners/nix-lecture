@@ -113,4 +113,8 @@ All software is built with The Pipeline™:
 
 #pagebreak()
 
-Repology pic
+#image("../images/repology-without-nixpkgs.svg")
+
+#pagebreak()
+
+#image("../images/repology-with-nixpkgs.svg")
