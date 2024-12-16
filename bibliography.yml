@@ -1,0 +1,28 @@
+taming-unix:
+  type: article
+  title: Nix – taming Unix with functional programming
+  author: Valentin Gagarin
+  date: 2022-07-14
+  url: https://www.tweag.io/blog/2022-07-14-taming-unix-with-nix/
+  parent:
+    type: blog
+    url: https://www.tweag.io/blog/
+
+memory-discipline:
+  type: article
+  title: The Purely Functional Software Deployment Model
+  author:
+    - Eelco Dolstra
+    - Eelco Visser
+    - Merijn de Jonge
+  date: 2004
+  url: https://edolstra.github.io/pubs/immdsd-icse2004-final.pdf
+
+phd-thesis:
+  type: thesis
+  title: The Purely Functional Software Deployment Model
+  author: Eelco Dolstra
+  date: 2006-01-18
+  serial-number:
+    isbn: 90-393-4130-3
+  url: https://edolstra.github.io/pubs/phd-thesis.pdf

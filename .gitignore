@@ -1,0 +1,6 @@
+*.pdf
+.direnv
+.envrc
+dist-newstyle
+result
+result-*
