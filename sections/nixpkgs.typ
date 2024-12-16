@@ -15,7 +15,7 @@ All software is built with The Pipeline™:
     node(
       (0, 0),
       [
-        `fetch`
+        fetch
       ],
       height: 3em,
       width: 5em,
@@ -24,7 +24,7 @@ All software is built with The Pipeline™:
     node(
       (1, 0),
       [
-        `unpack`
+        unpack
       ],
       height: 3em,
       width: 5em,
@@ -33,7 +33,7 @@ All software is built with The Pipeline™:
     node(
       (2, 0),
       [
-        `patch`
+        patch
       ],
       height: 3em,
       width: 5em,
@@ -42,7 +42,7 @@ All software is built with The Pipeline™:
     node(
       (3, 0),
       [
-        `configure`
+        configure
       ],
       height: 3em,
       width: 5em,
@@ -51,7 +51,7 @@ All software is built with The Pipeline™:
     node(
       (4, 0),
       [
-        `build`
+        build
       ],
       height: 3em,
       width: 5em,
@@ -60,7 +60,7 @@ All software is built with The Pipeline™:
     node(
       (5, 0),
       [
-        `check`
+        check
       ],
       height: 3em,
       width: 5em,
@@ -69,7 +69,7 @@ All software is built with The Pipeline™:
     node(
       (6, 0),
       [
-        `install`
+        install
       ],
       height: 3em,
       width: 5em,
@@ -78,7 +78,7 @@ All software is built with The Pipeline™:
     node(
       (7, 0),
       [
-        `fixup`
+        fixup
       ],
       height: 3em,
       width: 5em,
