@@ -1,3 +1,11 @@
+#import "../utils.typ": *
+
+#focus-slide[
+That's all, folks!
+]
+
+== Stay in touch!
+
 #grid(
   columns: (1fr, 1fr, 3fr, 1fr, 1fr),
   [],

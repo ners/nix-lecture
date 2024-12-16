@@ -30,24 +30,26 @@
 
 #include "sections/nix-store.typ"
 
-= Nix language
-
 #include "sections/nix-language.typ"
-
-= Nixpkgs
 
 #include "sections/nixpkgs.typ"
 
-= NixOS
-
 #include "sections/nixos.typ"
 
-= Intermezzo
+#include "sections/intermezzo.typ"
 
-#include "sections/install-nix.typ"
+#include "sections/construction.typ"
 
-= Nix projects
+#include "sections/nix-cli.typ"
 
-== Stay in touch!
+#include "sections/nix-files.typ"
+
+#include "sections/building-c-project.typ"
+
+#include "sections/python-shell.typ"
+
+#include "sections/oci-images.typ"
+
+#include "sections/nixos-tests.typ"
 
 #include "sections/and-goodbye.typ"

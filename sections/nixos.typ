@@ -1,5 +1,7 @@
 #import "../utils.typ": *
 
+= NixOS
+
 == NixOS
 
 - Software can also have environment requirements at run-time
@@ -94,3 +96,30 @@
 #pause
 #parspace
 - The data structure produced by the module system is the final configuration for our OS
+
+== Example NixOS configuration
+
+#text(14pt, [```nix
+{ config, pkgs, ... }:
+{
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
+
+  # Enable the OpenSSH server.
+  services.sshd.enable = true;
+
+  # Install GNOME desktop environment
+  services.xserver.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
+
+  # Use nVidia drivers
+  nixpkgs.config.allowUnfree = true;
+  services.xserver.videoDrivers = [ "nvidia" ];
+
+  # Set up the firewall for HTTP
+  networking.firewall.allowedTCPPorts = [ 80 443 ];
+}
+```])

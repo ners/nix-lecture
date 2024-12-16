@@ -1,0 +1,12 @@
+cabal-version: 3.0
+name: hello
+version: 0.1.0.0
+
+executable hello
+  hs-source-dirs: .
+  main-is: Main.hs
+  build-depends:
+    base,
+    http-types,
+    wai,
+    warp,

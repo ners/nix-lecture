@@ -1,5 +1,7 @@
 #import "../utils.typ": *
 
+= Nixpkgs
+
 == Nixpkgs
 
 All software is built with The Pipeline™:

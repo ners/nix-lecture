@@ -1,5 +1,7 @@
 #import "../utils.typ": *
 
+= Nix language
+
 == Nix language
 
 Why do we need a new language?
