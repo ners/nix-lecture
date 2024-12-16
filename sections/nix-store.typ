@@ -27,6 +27,28 @@
 
 #pagebreak()
 
+If the Nix store is "heap memory", which program populates and uses this memory?
+
+#pause
+#parspace
+- The program would be written in a functional language
+  #pause
+  - the basic building block is a *function*
+  #pause
+  - functions can have *multiple inputs* and always produce *one output*
+  #pause
+  - a function called with the *same inputs* will produce the *same output*
+
+#pause
+#parspace
+- The inputs and output are store objects
+
+#pause
+#parspace
+- We can only create new store objects, not delete or update them
+
+#pagebreak()
+
 #let inputs = diagram(
   spacing: 2em,
   node-stroke: 1pt,
@@ -122,28 +144,6 @@
     edge((1, 1), (2, 1), "-|>"),
     node((2, 1), [build result], height: 3em, width: 6em),
   )]
-
-#pagebreak()
-
-If the Nix store is "heap memory", which program populates and uses this memory?
-
-#pause
-#parspace
-- The program would be written in a functional language
-  #pause
-  - the basic building block is a *function*
-  #pause
-  - functions can have *multiple inputs* and always produce *one output*
-  #pause
-  - a function called with the *same inputs* will produce the *same output*
-
-#pause
-#parspace
-- The inputs and output are store objects
-
-#pause
-#parspace
-- We can only create new store objects, not delete or update them
 
 #pagebreak()
 
