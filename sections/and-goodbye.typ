@@ -11,7 +11,7 @@
   [],
   [#image("../images/meetup.svg")],
   [#align(center)[#image("../images/qrcode.svg")]],
-  [#image(width: 120%, "../images/nix-zurich.png")],
+  [#image(width: 120%, "../images/nix-zurich.svg")],
   [],
 )
 
