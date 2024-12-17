@@ -7,13 +7,17 @@
     subtitle: [Reproducible development from theory to practice],
     author: [ners],
     date: "17 December 2024",
+    institution: link("https://github.com/ners/nix-lecture")
   ),
   config-page(numbering: "1"),
 )
 
-// Pdfpc configuration
+#set smartquote(quotes: "«»")
+
+#set quote(block: true)
+
 #pdfpc.config(
-  duration-minutes: 30,
+  duration-minutes: 90,
   start-time: datetime(hour: 8, minute: 10, second: 0),
   end-time: datetime(hour: 9, minute: 40, second: 0),
   last-minutes: 5,
@@ -27,10 +31,6 @@
     direction: "inward",
   ),
 )
-
-#set smartquote(quotes: "«»")
-
-#set quote(block: true)
 
 #include "sections/title.typ"
 
