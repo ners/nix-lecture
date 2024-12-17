@@ -145,7 +145,7 @@ Some other options for `system`:
       in
       {
         devShells.${system}.default = pkgs.mkShell {
-          nativeBuildInputs = [
+          packages = [
             pkgs.fortune
             pkgs.cowsay
             pkgs.lolcat
@@ -168,7 +168,7 @@ Some other options for `system`:
       in
       {
         devShells.${system}.default = pkgs.mkShell {
-          nativeBuildInputs = with pkgs; [
+          packages = with pkgs; [
             fortune
             cowsay
             lolcat

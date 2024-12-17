@@ -8,7 +8,7 @@
     in
     {
       devShells.${system}.default = pkgs.mkShell {
-        nativeBuildInputs = with pkgs; [
+        packages = with pkgs; [
           fortune
           cowsay
           lolcat

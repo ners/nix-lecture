@@ -32,6 +32,14 @@
 
 #pagebreak()
 
+#set page(
+  background: place(horizon + right, dx: -150pt, image(
+    "../images/nix.svg",
+    width: 180pt,
+    height: 150pt,
+  )),
+)
+
 #speaker-note[
   + As mentioned, Nix is not just one thing but an ecosystem
   + Parts of this ecosystem are named somewhat confusingly

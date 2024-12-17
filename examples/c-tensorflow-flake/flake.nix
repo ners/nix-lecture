@@ -7,6 +7,10 @@
       pkgs = import inputs.nixpkgs { inherit system; };
     in
     {
+      devShells.${system}.default = pkgs.mkShell {
+        packages = with pkgs; [ libtensorflow ];
+      };
+
       packages.${system}.default = pkgs.stdenv.mkDerivation {
         name = "hello";
         src = ./.;

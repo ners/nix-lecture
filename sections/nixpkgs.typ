@@ -4,9 +4,25 @@
 
 == Nixpkgs
 
+```nix
+let
+  pkgs = import <nixpkgs> {};
+in
+pkgs.stdenv.mkDerivation {
+  pname = "hello";
+  version = "0.0.1";
+  source = ./.;
+  buildInputs = [ ];
+  buildPhase = "make";
+  installPhase = "make install";
+  meta.license = pkgs.lib.licenses.mit;
+}
+```
+
+#pagebreak()
+
 All software is built with The Pipeline™:
 
-#pause
 #parspace
 #text(
   14pt,

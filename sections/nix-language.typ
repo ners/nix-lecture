@@ -35,6 +35,13 @@ Why do we need a new language?
 
 #pagebreak()
 
+#speaker-note[
++ Domain-specific as opposed to an existing language
++ Purely functional because it has no side effects
++ With lazy evaluation we can do things like fix-point computation
++ Values are assigned types at runtime
+]
+
 Properties of the Nix language
 
 #pause
@@ -134,6 +141,19 @@ Functions
       ```,
     )],
 )
+
+#pagebreak()
+
+Functional programming
+
+#pause
+#parspace
+
+#raw(read("../examples/fib/default.nix"), lang: "Nix")
+
+#pause
+#parspace
+#raw(read("../examples/fib/out.txt"))
 
 #pagebreak()
 
