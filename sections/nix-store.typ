@@ -49,7 +49,61 @@ If the Nix store is "heap memory", which program populates and uses this memory?
 
 #pagebreak()
 
-#let inputs = diagram(
+#let thunk = diagram(
+  spacing: 2em,
+  node-stroke: 1pt,
+  edge-stroke: 1pt,
+  node(
+    (0, 0),
+    [
+      function
+    ],
+    height: 3em,
+    width: 6em,
+  ),
+  edge((0, 0), (2, 1), "-|>"),
+  node(
+    (0, 1),
+    [
+      parameter
+    ],
+    height: 3em,
+    width: 6em,
+  ),
+  edge((0, 1), (2, 1), "-|>"),
+  node(
+    (0, 2),
+    [
+      parameter
+    ],
+    height: 3em,
+    width: 6em,
+  ),
+  edge((0, 2), (2, 1), "-|>"),
+  node(
+    (2, 1),
+    [
+      thunk
+    ],
+    height: 3em,
+    width: 6em,
+  ),
+  edge((2, 1), (3, 1), "-|>"),
+  node(
+    (3, 1),
+    [
+      result
+    ],
+    height: 3em,
+    width: 6em,
+  ),
+)
+
+#align(center)[#thunk]
+
+#pagebreak()
+
+#let build = diagram(
   spacing: 2em,
   node-stroke: 1pt,
   edge-stroke: 1pt,
@@ -99,7 +153,51 @@ If the Nix store is "heap memory", which program populates and uses this memory?
   ),
 )
 
-#align(center)[#inputs]
+#align(center)[#build]
+
+#pagebreak()
+
+#align(center)[#diagram(
+    spacing: 1.25em,
+    node-stroke: 1pt,
+    edge-stroke: 1pt,
+    node(
+      (0, 0),
+      [
+        function
+      ],
+      height: 6em,
+      width: 10em,
+    ),
+    edge((0, 0), (1, 1), "-|>"),
+    node(
+      (0, 1),
+      [
+        #text(
+          8pt,
+          [#thunk],
+        )
+      ],
+      height: 6em,
+      width: 10em,
+    ),
+    edge((0, 1), (1, 1), "-|>"),
+    node(
+      (0, 2),
+      [
+        #text(
+          8pt,
+          [#thunk],
+        )
+      ],
+      height: 6em,
+      width: 10em,
+    ),
+    edge((0, 2), (1, 1), "-|>"),
+    node((1, 1), [thunk], height: 3em, width: 6em),
+    edge((1, 1), (2, 1), "-|>"),
+    node((2, 1), [result], height: 3em, width: 6em),
+  )]
 
 #pagebreak()
 
@@ -121,7 +219,7 @@ If the Nix store is "heap memory", which program populates and uses this memory?
       [
         #text(
           8pt,
-          [#inputs],
+          [#build],
         )
       ],
       height: 6em,
@@ -133,7 +231,7 @@ If the Nix store is "heap memory", which program populates and uses this memory?
       [
         #text(
           8pt,
-          [#inputs],
+          [#build],
         )
       ],
       height: 6em,
@@ -166,9 +264,9 @@ What are the functions in our program?
 - Unix processes that run *in a sandbox* to behave like pure functions
   #pause
 
-  - we only allow it read access to the inputs
+  - we only allow read access to the inputs
   #pause
-  - we only allow it write access to the output location
+  - we only allow write access to the output location
   #pause
   - the output of the process will become a new store object
 
@@ -182,4 +280,4 @@ What are the functions in our program?
 
 #pagebreak()
 
-#text(size: 12pt, raw(read("../examples/hello/derivation.json"), lang: "JSON"))
+#text(size: 14pt, raw(read("../examples/hello/derivation.json"), lang: "JSON"))

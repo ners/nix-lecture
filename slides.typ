@@ -6,7 +6,7 @@
     title: [Nix],
     subtitle: [Reproducible development from theory to practice],
     author: [ners],
-    date: "17 December 2024",
+    date: "16 December 2025",
     institution: link("https://github.com/ners/nix-lecture")
   ),
   config-page(numbering: "1"),
@@ -18,18 +18,11 @@
 
 #pdfpc.config(
   duration-minutes: 90,
-  start-time: datetime(hour: 8, minute: 10, second: 0),
-  end-time: datetime(hour: 9, minute: 40, second: 0),
+  start-time: datetime(hour: 10, minute: 0, second: 0),
+  end-time: datetime(hour: 12, minute: 0, second: 0),
   last-minutes: 5,
   note-font-size: 16,
   disable-markdown: false,
-  default-transition: (
-    type: "push",
-    duration-seconds: 2,
-    angle: ltr,
-    alignment: "vertical",
-    direction: "inward",
-  ),
 )
 
 #include "sections/title.typ"

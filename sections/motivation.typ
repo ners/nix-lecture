@@ -30,7 +30,7 @@
 #pagebreak()
 #speaker-note[
   + Linux is an example of an ecosystem that solves these problems for you
-  + Examples include: apt, rpm, Homebrew, flatpak
+  + Examples include: apt, rpm, flatpak, Homebrew, chocolatey
   + Even if you use the same package manager, on different computers you might get different versions
   + When updating software, old versions are deleted
   + Updating one program's dependency interferes with all other programs that have this dependency

@@ -9,7 +9,7 @@ $ git --version
 ```
 #pause
 ```
-git version 2.47.0
+git version 2.51.2
 ```
 
 #pause

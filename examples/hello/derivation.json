@@ -5,12 +5,6 @@
       "echo hello > $out"
     ],
     "builder": "/nix/store/3zdjy6cy39hyfbfabqi2i949v50s3pcb-sh",
-    "env": {
-      "builder": "/nix/store/3zdjy6cy39hyfbfabqi2i949v50s3pcb-sh",
-      "name": "hello",
-      "out": "/nix/store/dy93f4lj9xkv3gkm6zvnfl6x3vckmgad-hello",
-      "system": "x86_64-linux"
-    },
     "inputDrvs": {},
     "inputSrcs": [
       "/nix/store/3zdjy6cy39hyfbfabqi2i949v50s3pcb-sh"

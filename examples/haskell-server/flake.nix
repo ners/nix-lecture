@@ -1,5 +1,5 @@
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
   outputs = inputs:
     let
@@ -19,14 +19,15 @@
         image = image;
       };
 
-      checks.${system}.nixosTest = pkgs.nixosTest {
+      checks.${system}.nixosTest = pkgs.testers.nixosTest {
         name = "hello-test";
         nodes = {
           server = {
             networking.firewall.allowedTCPPorts = [ 3000 ];
             systemd.services.server = {
               wantedBy = [ "multi-user.target" ];
-              script = "${hello}/bin/hello";
+              path = [ hello ];
+              script = hello.meta.mainProgram;
             };
           };
           client = {

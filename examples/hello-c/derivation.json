@@ -6,12 +6,6 @@
       "/nix/store/pm04fgly1zxmdx64kkqwf3kf1c11smdr-hello.c"
     ],
     "builder": "/nix/store/i31w737kksgxlnnb0ggbaapc5134awrh-gcc",
-    "env": {
-      "builder": "/nix/store/i31w737kksgxlnnb0ggbaapc5134awrh-gcc",
-      "name": "hello",
-      "out": "/nix/store/0a52cvfra32hhv84vy0m4hc4sxdmr3p6-hello",
-      "system": "x86_64-linux"
-    },
     "inputDrvs": {},
     "inputSrcs": [
       "/nix/store/i31w737kksgxlnnb0ggbaapc5134awrh-gcc",

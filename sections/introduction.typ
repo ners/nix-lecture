@@ -3,8 +3,8 @@
 = Introduction
 #speaker-note[
   + Don't worry if you don't know what Nix is yet – in fact, it's probably better if you don't
-  + Most Nix users don't even know what Nix is or how it works!
   + Explaining Nix to a total beginner is actually easier
+  + Most Nix users don't even know what Nix is or how it works!
   + The reason for this is that different people use Nix for different things
   + Every Nix user learned Nix in different ways
   + Most people hear about Nix because someone tried selling it to them – often just the parts that *they* care about

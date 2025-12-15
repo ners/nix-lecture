@@ -46,14 +46,14 @@ Hello world!
 
 == Building a C project with dependencies
 
-Let's add a depedency on TensorFlow
+Let's add a depedency on Lua
 
 #parspace
-#raw(read("../examples/c-tensorflow-flake/hello.c"), lang: "C")
+#raw(read("../examples/c-lua-flake/hello.c"), lang: "C")
 
 #pagebreak()
 
-#raw(read("../examples/c-tensorflow-flake/Makefile"), lang: "Make")
+#raw(read("../examples/c-lua-flake/Makefile"), lang: "Make")
 
 #pagebreak()
 
@@ -63,7 +63,7 @@ Let's add a depedency on TensorFlow
 
 ```nix
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
   outputs = inputs:
     let
@@ -74,7 +74,7 @@ Let's add a depedency on TensorFlow
       packages.${system}.default = pkgs.stdenv.mkDerivation {
         name = "hello";
         src = ./.;
-        buildInputs = [ pkgs.libtensorflow ];
+        buildInputs = with pkgs; [ lua ];
       };
     };
 }
@@ -82,4 +82,14 @@ Let's add a depedency on TensorFlow
 
 #pagebreak()
 
-#text(16pt, raw(read("../examples/c-tensorflow-flake/flake.nix"), lang: "Nix"))
+#text(16pt, raw(read("../examples/c-lua-flake/flake.nix"), lang: "Nix"))
+
+#pagebreak()
+
+```bash
+$ nix run
+```
+#pause
+```
+Hello from Lua!
+```

@@ -22,7 +22,7 @@
 
 ```nix
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
   outputs = inputs:
     let
@@ -40,7 +40,7 @@
 
 ```nix
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
   outputs = inputs:
     let
@@ -77,7 +77,7 @@ Let's inspect the runtime dependencies of our executable:
 #text(12pt, [
 ```bash
 $ nix build
-$ ldd result/bin/server
+$ ldd result/bin/hello
 ```
 #pause
 #raw(read("../examples/haskell-server/ldd.txt"), lang: "Haskell")
@@ -90,7 +90,7 @@ That’s a lot of dependencies! Sure would be a shame if we forgot some…
 
 #text(14pt, [```nix
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
   outputs = inputs:
     let
@@ -108,7 +108,7 @@ That’s a lot of dependencies! Sure would be a shame if we forgot some…
 
 #text(14pt, [```nix
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
   outputs = inputs:
     let
@@ -135,7 +135,21 @@ That’s a lot of dependencies! Sure would be a shame if we forgot some…
 
 ```bash
 $ nix build .#image
+```
+#pause
+```bash
+$ ls -ahl result
+```
+#pause
+```
+lrwxrwxrwx 1 ners ners 56 Dez 16 08:40 result -> /nix/store/gljsmlzgwzfpggrxa1jnlj0lhgv1mrix-hello.tar.gz
+```
+#pause
+```bash
 $ podman load -i result
+```
+#pause
+```bash
 $ podman run --publish 3000:3000 hello
 ```
 #pause

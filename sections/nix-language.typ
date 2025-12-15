@@ -24,7 +24,7 @@ Why do we need a new language?
 #grid(
   columns: (1.5fr, 1fr),
   text(
-    size: 12pt,
+    size: 14pt,
     raw(read("../examples/hello/derivation.json"), lang: "JSON"),
   ),
   [
@@ -36,7 +36,7 @@ Why do we need a new language?
 #pagebreak()
 
 #speaker-note[
-+ Domain-specific as opposed to an existing language
++ Domain-specific as opposed to a general-purpose language
 + Purely functional because it has no side effects
 + With lazy evaluation we can do things like fix-point computation
 + Values are assigned types at runtime
@@ -185,7 +185,7 @@ The purpose of the Nix language is to easily *create* and *compose* derivations
   columns: (1fr, 1.5fr),
   text(size: 14pt, raw(read("../examples/hello/default.nix"), lang: "Nix")),
   text(
-    size: 11pt,
+    size: 14pt,
     raw(read("../examples/hello/derivation.json"), lang: "JSON"),
   ),
 )
@@ -199,7 +199,7 @@ The purpose of the Nix language is to easily *create* and *compose* derivations
   columns: (1fr, 1.5fr),
   text(size: 14pt, raw(read("../examples/hello-c/default.nix"), lang: "Nix")),
   text(
-    size: 11pt,
+    size: 14pt,
     raw(read("../examples/hello-c/derivation.json"), lang: "JSON"),
   ),
 )

@@ -1,5 +1,5 @@
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
   outputs = inputs:
     let
@@ -9,7 +9,7 @@
     {
       devShells.${system}.default = pkgs.mkShell {
         nativeBuildInputs = [
-          (pkgs.python311.withPackages (ps: [ ps.tensorflow ]))
+          (pkgs.python3.withPackages (ps: [ ps.torch ]))
         ];
       };
     };

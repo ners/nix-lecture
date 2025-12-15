@@ -29,7 +29,7 @@
 {
     inputs = {
         nixpkgs = {
-            url = "github:nixos/nixpkgs/nixos-24.11";
+            url = "github:nixos/nixpkgs/nixos-25.11";
         };
     };
 
@@ -41,7 +41,7 @@
 
 ```nix
 {
-    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     outputs = inputs: {};
 }
@@ -51,7 +51,7 @@
 
 ```nix
 {
-    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     outputs = inputs: {
         hello = "world";
@@ -84,7 +84,7 @@ $ nix eval .#hello
 
 ```nix
 {
-    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     outputs = inputs:
       let
@@ -103,7 +103,7 @@ Some other options for `system`:
 
 ```nix
 {
-    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     outputs = inputs:
       let
@@ -119,7 +119,7 @@ Some other options for `system`:
 
 ```nix
 {
-    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     outputs = inputs:
       let
@@ -136,7 +136,7 @@ Some other options for `system`:
 
 #text(size: 18pt, ```nix
 {
-    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     outputs = inputs:
       let
@@ -159,7 +159,7 @@ Some other options for `system`:
 
 #text(size: 18pt, ```nix
 {
-    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     outputs = inputs:
       let

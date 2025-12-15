@@ -7,4 +7,4 @@
     height: 100%,
   ),
 )
-#title-slide()
+#text(24pt, title-slide())
